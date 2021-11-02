@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huerto | Beauty Flora</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="flexbox centrado-mediano">
+            <a href="index.html"><img src="img/beautyflora-logo.png" alt="Logo de Beauty Flora"></a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Jardín</a>
+                    </li>
+                    <li class="activo">
+                        <a href="#">Huerto</a>
+                    </li>
+                    <li>
+                        <a href="#">Fichas</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-especial">Comunidad</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="centrado-chico flexbox-centrado">
+            <h1>¿Querés saber que plantar en cada estación?</h1>
+            <p>Si como a nosotros, te apasiona la jardinería, te invitamos a participar de nuestro foro. Allí
+                encontrarás consejos útiles e información compartida por otros jardineros, sobre qué, cómo y cuándo
+                plantar cada especie.
+            </p>
+            <p>
+                Además te dejamos aquí unas opciones especies que puedes sembrar en la estación actual. En caso de que
+                tengas dudas te invitamos a contactarnos.
+            </p>
+            <a class="boton-claro" href="">Contactar</a>
+            <a class="boton-oscuro" href="">Comunidad</a>
+        </div>
+    </header>
+    <!-- FIN DEL HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <!-- Comienzo de la primer sección -->
+        <section id="primer-seccion-huerto">
+            <div class="grilla3x5 centrado-grande">
+                <h2>Siembra de primavera</h2>
+                <figure>
+                    <img src="img/berenjena.jpg" alt="Foto de berejena en planta" title="Berenjena">
+                </figure>
+                <figure>
+                    <img src="img/pepino1.jpg" alt="Foto de pepinos en planta" title="Pepino">
+                </figure>
+                <figure>
+                    <img src="img/calabaza.jpg" alt="Fotos de varias calabazas" title="Calabaza">
+                </figure>
+                <figure>
+                    <img src="img/pepino2.jpg" alt="Foto de cananasto con pepinos" title="Pepino">
+                </figure>
+                <figure>
+                    <img src="img/acelga.jpg" alt="Foto de un atado de acelga" title="Acelga">
+                </figure>
+                <figure>
+                    <img src="img/morron.jpg" alt="Fotos de morrones de diferentes colores" title="Morrón">
+                </figure>
+                <figure>
+                    <img src="img/lechuga.jpg" alt="Foto de un recipiente con lechugas" title="Lechuga">
+                </figure>
+            </div>
+        </section>
+        <!-- Fin de la primer sección -->
+
+        <!-- Comienzo de la segunda sección -->
+        <section id="segunda-seccion-huerto">
+            <div class="centrado-chico flexbox-centrado">
+                <h3>¿Dónde conseguir semillas?</h3>
+                <p>A través del siguiente botón puedes acceder a un listado de lugares donde conseguir las semillas de
+                    estación en todo el país.</p>
+                <button class="boton-oscuro" type="button">Conocer más...</button>
+            </div>
+        </section>
+        <!-- Fin de la segunda sección -->
+
+        <!-- Comienzo de la tercer sección -->
+        <section id="tercer-seccion-huerto">
+            <div class="flexbox centrado-mediano">
+                <h2>Guía de siembra primavera-verano</h2>
+                <div>
+                    <h3>Primavera</h3>
+                    <table>
+                        <tr>
+                            <th>Frutas</th>
+                            <td>Frutillas, Sandias...</td>
+                            <td>
+                                <a class="boton-claro" href="">Detalles</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Verduras</th>
+                            <td>Zanahorias, Lechugas, Berenjenas....</td>
+                            <td>
+                                <a class="boton-claro" href="">Detalles</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Plantas Aromáticas</th>
+                            <td>Albahaca, Lavanda....</td>
+                            <td>
+                                <a class="boton-claro" href="">Detalles</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Plantas y Flores</th>
+                            <td>Rosa, Azalea, Jazmín...</td>
+                            <td>
+                                <a class="boton-claro" href="">Detalles</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3>¿Tienes dudas sobre la guía? Consúltanos:</h3>
+                    <form action="#" method="post">
+                        <div>
+                            <div>
+                                <label for="id-nombre">Nombre</label>
+                                <input type="text" name="nombre" id="id-nombre" required>
+                            </div>
+                            <div>
+                                <label for="id-apellido">Apellido</label>
+                                <input type="text" name="apellido" id="id-apellido" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="id-estacion">Estación</label>
+                            <select name="estacion" id="id-estacion">
+                                <option value="" selected disabled>*Selecciona una estación de siembra*</option>
+                                <option value="verano">Verano</option>
+                                <option value="otonio">Otoño</option>
+                                <option value="invierno">Invierno</option>
+                                <option value="primavera">Primavera</option>
+                            </select>
+                        </div>
+                        <div class="flexbox">
+                            <p>Categoría:</p>
+                            <label for="id-huerto">Huerto</label>
+                            <input type="radio" name="categoria" id="id-huerto" checked>
+                            <label for="id-jardin">Jardín</label>
+                            <input type="radio" name="categoria" id="id-jardin">
+                            <label for="id-ambas">Ambas</label>
+                            <input type="radio" name="categoria" id="id-ambas">
+                        </div>
+                        <div class="flex-fila">
+                            <textarea name="comentario" id="id-comentario" cols="30" rows="3"
+                                placeholder="Escribe tu comentario"></textarea>
+                            <input type="submit" value="Enviar" class="boton-claro">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de la tercer sección -->
+    </main>
+    <!-- FIN DEL MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="flexbox">
+        <h2>www.beautyflora.com.uy</h2>
+        <div>
+            <img src="img/beautyflora-logo.png" alt="Logo de Beuty Flora">
+        </div>
+        <div>
+            <h3>Plantas y Flores</h3>
+            <ul>
+                <li><a href="#">Plantas de exterior</a></li>
+                <li><a href="#">Plantas de interior</a></li>
+                <li><a href="#">Árboles florales</a></li>
+                <li><a href="#">Árboles frutales</a></li>
+                <li><a href="#">Cuidados del jardín</a></li>
+                <li><a href="#">Herramientas de jardiería</a></li>
+                <li><a href="#">Semillas de jardín</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Huerto</h3>
+            <ul>
+                <li><a href="#">Huerto urbano</a></li>
+                <li><a href="#">Huerto rural</a></li>
+                <li><a href="#">Semillas de huerto</a></li>
+                <li><a href="#">Siembra y cosecha</a></li>
+                <li><a href="#">Recetas</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Nuestra Web</h3>
+            <ul>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Seguinos en nuestras redes!</p>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="img/youtube.png" alt="Botón de redirección a Youtube">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="img/facebook.png" alt="Botón de redirección a Facebook">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="img/twitter.png" alt="Botón de redirección a Twitter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="img/instagram.png" alt="Botón de redirección a Instagram">
+            </a>
+        </div>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+
+</body>
+
+</html>
